@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Montserrat:300,400,500,600&display=swap');
+.navbar {
+    background: #4A148C !important;
+}
+
+.navbar a:not(.dropdown-item):not(.navbar-brand) {
+    color: hsla(0, 0%, 80%, 0.75) !important;
+    font-weight: 500;
+}
+
+.navbar .nav-item.active a:not(.dropdown-item) {
+    color: hsla(0, 0%, 95%, 1) !important;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: whitesmoke !important;
+    font-family: 'Audiowide', cursive;
+    letter-spacing: .3rem;
+}

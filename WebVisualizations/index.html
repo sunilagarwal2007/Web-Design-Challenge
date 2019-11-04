@@ -2,62 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Page</title>
+    <title>Latitude</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
-    <!--
-        My Header
-    -->
-    <h1>My linkedin profile Analysis</h1>
-    <hr>
-    <h2>
-        <img src="https://media.licdn.com/dms/image/C5603AQHSe1E7I67frg/profile-displayphoto-shrink_200_200/0?e=1576713600&v=beta&t=FS6gcwgyxp3Us9q6Tv7R7UMKYD_TDxwmIYpHdt5KL9A" alt="">
-        <br/>
-        <a href="https://www.linkedin.com/in/sunil-agarwal-12638336/">Sunil Agarwal</a>
-    </h2>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand text-uppercase" href="#">Latitude</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Data</a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </nav>
+<section class="container-fluid px-5 py-5">
+<div class="row">
+  <div class="col-sm-12 col-lg-7">
+    <div class="card mb-3">
+        <div class="card-header bg-transparent">
+
+            <h5 class="card-title">Summary: Latitude vs. X</h5>
+        </div>
+        <div class="card-body text-justify pt-5 px-5">
+            <img class="card-img p-3 float-left w-50 mr-4" src="visualizations/Fig1.png" alt="Lat vs. Max Temp">
+            <p class="card-text">
+                In this project I created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To create this representative model of weather across world cities, I utilized tools such as Pandas, Jupyter Notebooks,
+                and the OpenWeatherMap API.</p>
+            <p class="card-text"> I then built a series of scatter plots using Matplotlib to showcase the relationship between the latitude and factors such as temperature, humidity, cloudiness, and wind speed. This site provides the source data used for this project
+                along with the 4 plots that I created. </p>
+
+        </div>
+
+    </div>
+
+  </div>
+
+  <div class="col-sm-12 col-lg-5">
+      <div class="card mb-3">
+          <div class="card-header bg-transparent">
+
+              <h5 class="card-title">Visualizations</h5>
+          </div>
+
+          <div class="card-body container">
+              <div class="row">
+                  <a class="col-md-6 p-3" href="plots/max-temperature"><img class="card-img" src="visualizations/Fig1.png" alt="Lat vs. Max Temp"></a>
+                  <a class="col-md-6 p-3" href="plots/humidity"><img class="card-img " src="visualizations/Fig2.png" alt="Lat vs. Humidity"></a>
+                  <a class="col-md-6 p-3" href="plots/cloudiness"><img class="card-img" src="visualizations/Fig3.png" alt="Lat vs. Cloudiness"></a>
+                  <a class="col-md-6 p-3" href="plots/wind-speed"> <img class="card-img " src="visualizations/Fig4.png" alt="Lat vs. Wind Speed"></a>
+              </div>
+
+          </div>
+      </div>
+
+  </div>
+</div>
+
+
+</section>
     
-    <table border="1">
-        <th>Visitor Count in last 24 hours</th>
-        <tr>
-            <td>
-                100
-            </td>
-        </tr>
-    </table>
-    <br>
-    <form action="https://www.linkedin.com/in/sunil-agarwal-12638336/">
-            <input type="text">
-            <input type="Submit">
-           
-    </form>
-    
-    <button><a href="https://www.linkedin.com/in/sunil-agarwal-12638336/">
-        <img src="https://media.licdn.com/dms/image/C5603AQHSe1E7I67frg/profile-displayphoto-shrink_200_200/0?e=1576713600&v=beta&t=FS6gcwgyxp3Us9q6Tv7R7UMKYD_TDxwmIYpHdt5KL9A" alt="">
-    </a>
-    </button>
-    
-    <table style="border: 1px">
-        <caption>Color names and values</caption>
-        <tbody>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">HEX</th>
-            <th scope="col">HSLa</th>
-            <th scope="col">RGBa</th>
-          </tr>
-          <tr>
-            <th scope="row">Teal</th>
-            <td><code>#51F6F6</code></td>
-            <td><code>hsla(180, 90%, 64%, 1)</code></td>
-            <td><code>rgba(81, 246, 246, 1)</code></td>
-          </tr>
-          <tr>
-            <th scope="row">Goldenrod</th>
-            <td><code>#F6BC57</code></td>
-            <td><code>hsla(38, 90%, 65%, 1)</code></td>
-            <td><code>rgba(246, 188, 87, 1)</code></td>
-          </tr>
-        </tbody>
-      </table>
 </body>
 </html>
